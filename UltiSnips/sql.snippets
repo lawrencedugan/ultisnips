@@ -1,0 +1,89 @@
+snippet and "and"
+AND ${1:field1} ${2:=} ${3:value2}
+${4}
+endsnippet
+
+snippet betw "betw"
+BETWEEN (${1:value1} AND ${2:value2})
+endsnippet
+
+snippet between "between"
+BETWEEN (${1:value1} AND ${2:value2})
+endsnippet
+
+snippet date_part "date_part"
+date_part('${1:hour}',${2:datefield})
+endsnippet
+
+snippet datep "datep"
+date_part('${1:hour}',${2:datefield})
+endsnippet
+
+snippet group "group"
+GROUP BY ${1:field}
+endsnippet
+
+snippet ilike "ilike"
+ILIKE '${1:%}${2:text}${3:%}'${4}
+endsnippet
+
+snippet in "in"
+IN (${1:value1},${2:value2}${3})
+endsnippet
+
+snippet like "like"
+LIKE '${1:%}${2:text}${3:%}'${4}
+endsnippet
+
+snippet not "not"
+NOT IN (${1:value1},${2:value2}${3})
+endsnippet
+
+snippet order "order"
+ORDER BY ${1:field} ${2:ASC}
+endsnippet
+
+snippet sel "sel"
+SELECT ${1:fields}
+	FROM ${2:tables}
+	WHERE ${3:condition}
+	;
+endsnippet
+
+snippet sela "sela"
+SELECT ${1:fields}
+	FROM ${2:tables}
+	WHERE ${3:condition}
+	  AND ${4:condition}
+	;
+endsnippet
+
+snippet select "select"
+SELECT ${1:fields}
+	FROM ${2:tables}
+	WHERE ${3:condition}
+	  AND ${4:condition}
+	;
+endsnippet
+
+snippet time "time"
+TIMEZONE('UTC',${1:datefield})
+endsnippet
+
+snippet timez "timez"
+TIMEZONE('UTC',${1:datefield})
+endsnippet
+
+snippet timezone "timezone"
+TIMEZONE('UTC',${1:datefield})
+endsnippet
+
+snippet tz "tz"
+TIMEZONE('UTC',${1:datefield})
+endsnippet
+
+snippet where "where"
+WHERE ${1:field1} ${2:OP} ${3:value2}
+endsnippet
+
+
