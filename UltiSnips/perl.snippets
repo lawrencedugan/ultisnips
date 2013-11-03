@@ -59,6 +59,10 @@ ok(${3:assertion});
 
 endsnippet
 
+snippet ok "Test ok()"
+ok(${1:1}, "${2:msg}");
+endsnippet
+
 snippet class "class"
 package ${1:ClassName};
 
@@ -123,4 +127,13 @@ while ($1) {
 
 endsnippet
 
+# RT specific snippets
+snippet rtl "RT::Logger->CURSOR()"
+$RT::Logger->${1:error}(${2:$msg});
+endsnippet
+
+snippet rtsys "$RT::SystemUser"
+$RT::SystemUser
+
+endsnippet
 # vim:ft=snippets:
